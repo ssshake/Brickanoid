@@ -1,0 +1,35 @@
+Initialize engine version: 4.3.2f1 (0517a5ae8669)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.2641]
+    Renderer: NVIDIA GeForce GTX 770
+    Vendor:   NVIDIA
+    VRAM:     4028 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: Z:\Development\git\Brickanoid\Binaries\Windows\brickanoid_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading Z:\Development\git\Brickanoid\Binaries\Windows\brickanoid_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: Z:\Development\git\Brickanoid\Binaries\Windows\brickanoid_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading Z:\Development\git\Brickanoid\Binaries\Windows\brickanoid_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.133 seconds
+desktop: 1680x1050 120Hz; virtual: 1680x1050 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.341424 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 157.
+Total: 0.446455 ms (FindLiveObjects: 0.005266 ms CreateObjectMapping: 0.004681 ms MarkObjects: 0.065827 ms  DeleteObjects: 0.002633 ms)
+
+UnloadTime: 0.325918 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 122.
+Total: 0.497361 ms (FindLiveObjects: 0.005558 ms CreateObjectMapping: 0.004973 ms MarkObjects: 0.064949 ms  DeleteObjects: 0.023112 ms)
+
+UnloadTime: 0.327966 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 158.
+Total: 0.449965 ms (FindLiveObjects: 0.005558 ms CreateObjectMapping: 0.004973 ms MarkObjects: 0.062023 ms  DeleteObjects: 0.002047 ms)
+
