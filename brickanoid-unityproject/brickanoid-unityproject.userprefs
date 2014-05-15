@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\gameEnd.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MatrixBlender.cs">
     <Files>
-      <File FileName="Assets\Scripts\ballScript.cs" Line="6" Column="27" />
+      <File FileName="Assets\Scripts\ballScript.cs" Line="11" Column="2" />
       <File FileName="Assets\Scripts\brickScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\DeathScript.cs" Line="25" Column="4" />
+      <File FileName="Assets\Scripts\DeathScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\paddleScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\gameEnd.cs" Line="15" Column="4" />
+      <File FileName="Assets\Scripts\gameEnd.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MatrixBlender.cs" Line="16" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
