@@ -5,7 +5,7 @@ public class brickScript : MonoBehaviour {
 	static int numBricks = 0;
 	public int pointValue = 100;
 	public int hitPoints =1;
-
+	public GameObject powerup;
 	// Use this for initialization
 	void Start () {
 		numBricks++;
@@ -19,16 +19,11 @@ public class brickScript : MonoBehaviour {
 	void OnCollisionEnter (Collision col)
 	{
 		hitPoints--;
-		
-		
 		Die();	
-		
-		
 	}	
 
 	void OnTriggerEnter(Collider other){
 		
-		//	Debug.Log ("Trigger");
 		hitPoints = 0;
 		Die();
 		
@@ -38,8 +33,18 @@ public class brickScript : MonoBehaviour {
 	public void Die()
 	{
 		if (hitPoints <=0) 
-		{
-					
+		{Debug.Log(Random.Range(0,2));
+			//Power up Lotto
+			if (Random.Range(0,2) == 1){
+
+				GameObject pup = (GameObject)Instantiate(powerup, gameObject.transform.position, Quaternion.Euler(0, 0, 90));
+				pup.rigidbody.AddForce(Random.Range(-1f, 1f), 7, 0, ForceMode.Impulse);
+				GameObject.Find ("DeathField").GetComponent<DeathScript>().lives++;
+				Destroy(pup, 3);
+
+			}
+
+
 			Destroy( gameObject );
 			numBricks--;
 			//Debug.Log("Bricks:" + numBricks);
@@ -47,8 +52,7 @@ public class brickScript : MonoBehaviour {
 			{
 					Application.LoadLevel(Application.loadedLevel + 1);
 					
-			}
-			
+			}	
 		}
 	}
 
