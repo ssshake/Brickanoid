@@ -5,6 +5,7 @@ public class paddleScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Screen.showCursor = false;
 		GameObject ball = GameObject.Find("Ball");
 		ball.rigidbody.AddForce(0, 600, 0);
 	}
@@ -12,7 +13,13 @@ public class paddleScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		//Mouse Input
+		transform.Translate(Input.GetAxis("Mouse X"), 0, 0);
+
+		//Keyboard and Gamepad Input
 		transform.Translate(100 * Time.deltaTime * Input.GetAxis("Horizontal"), 0, 0);
+
+		//Apply Input
 		transform.position = new 
 				Vector3(
 							Mathf.Clamp(transform.position.x, -8.0f, 8.0f), 
