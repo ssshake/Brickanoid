@@ -19,7 +19,7 @@ public class paddleScript : MonoBehaviour {
 		//Keyboard and Gamepad Input
 		transform.Translate(100 * Time.deltaTime * Input.GetAxis("Horizontal"), 0, 0);
 
-		//Apply Input
+		//Clamp Movement
 		transform.position = new 
 				Vector3(
 							Mathf.Clamp(transform.position.x, -8.0f, 8.0f), 
