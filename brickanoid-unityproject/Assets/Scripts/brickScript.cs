@@ -33,7 +33,7 @@ public class brickScript : MonoBehaviour {
 	public void Die()
 	{
 		if (hitPoints <=0) 
-		{Debug.Log(Random.Range(0,2));
+		{
 			//Power up Lotto
 			if (Random.Range(0,2) == 1){
 

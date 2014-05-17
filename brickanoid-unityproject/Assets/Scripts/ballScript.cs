@@ -28,4 +28,24 @@ public class ballScript : MonoBehaviour {
 		}
 		
 	}
+
+
+	void OnCollisionEnter(Collision col) {
+
+		//Avoid boring bounces
+		Debug.Log ("Y" + rigidbody.velocity.y + " : " + Time.time);
+		if(rigidbody.velocity.y < 2  && Mathf.Sign(rigidbody.velocity.y) == 1 && col.transform.tag == "walls") {
+			rigidbody.AddForce(0f, 200f, 0f);
+			Debug.Log (Time.time + "  Bounce" + rigidbody.velocity.y);
+		} 
+		else if(rigidbody.velocity.y > -2 && Mathf.Sign(rigidbody.velocity.y) == -1 && col.transform.tag == "walls"){
+			rigidbody.AddForce(0f, -200f, 0f);
+			Debug.Log (Time.time + "  Bounce" + rigidbody.velocity.y);
+		}
+
+
+
+
+	}
+
 }
